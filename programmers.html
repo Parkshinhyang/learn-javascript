@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function solution(n) {
+        var n = n.toUpperCase();
+        var cnt_P = 0;
+        var cnt_Y = 0;
+        for (var i = 0; i < n.length; i++) {
+          if (n[i] === "P") {
+            cnt_P += 1;
+          } else if (n[i] === "Y") {
+            cnt_Y += 1;
+          }
+        }
+        console.log(cnt_P, cnt_Y);
+        if (cnt_Y === cnt_P) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      solution("pPoooyY");
+    </script>
+  </body>
+</html>
